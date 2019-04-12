@@ -1,5 +1,291 @@
-@import 'reset.less';
-
-bady {
-  background-color: blue;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ol,
+ul {
+  list-style: none;
+}
+.clearfix::before {
+  content: " ";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+}
+.layout {
+  width: 100vw;
+  height: 100vh;
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.mmm_content {
+  flex: 1;
+  overflow: scroll;
+}
+#header {
+  height: 50px;
+  background-color: #ff841d;
+  display: flex;
+  justify-content: space-between;
+}
+#header > .logo {
+  margin-left: 10px;
+  margin-top: 15px;
+}
+#header > .logo > img {
+  width: 50%;
+}
+#header > .app {
+  float: right;
+  margin-right: -20px;
+  margin-top: 15px;
+}
+#header > .app > img {
+  width: 50%;
+}
+#search {
+  background-color: #fff;
+}
+#search > form {
+  padding: 5px;
+  display: flex;
+}
+#search > form > input[type="search"] {
+  flex: 11;
+  width: 100%;
+  height: 2.3rem;
+  border-radius: 15px;
+  border: 0;
+  background-color: #f5f5f5;
+  padding-left: 15px;
+}
+#search > form > input[type="submit"] {
+  flex: 1;
+  height: 2.3rem;
+  border-radius: 15px;
+  background-color: #ff841d;
+  color: #fff;
+  border: 0;
+}
+.pyg_nav {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+.pyg_nav > a {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 8px;
+  color: #333;
+  margin-top: 5px;
+}
+.pyg_nav > a > img {
+  width: 30%;
+  display: inline-block;
+}
+.mmm_main .mmm_title {
+  background-color: orange;
+  height: 25px;
+  font-size: 13px;
+  line-height: 25px;
+  padding-left: 10px;
+  color: #fff;
+}
+.mmm_main .goodslist a {
+  padding: 20px 10px 0;
+  display: flex;
+  border-bottom: 2px solid #ccc;
+}
+.mmm_main .goodslist a .left {
+  flex: 3;
+}
+.mmm_main .goodslist a .left img {
+  width: 80%;
+}
+.mmm_main .goodslist a .right {
+  flex: 7;
+}
+.mmm_main .goodslist a .right div {
+  margin: 5px 0;
+}
+.mmm_main .goodslist a .right div:nth-of-type(1) {
+  font-size: 13px;
+}
+.mmm_main .goodslist a .right div:nth-of-type(2) {
+  font-size: 15px;
+  color: red;
+}
+.mmm_main .goodslist a .right div:nth-of-type(3) {
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+.recommen-more {
+  padding: 10px;
+  height: 40;
+  margin-top: 20px;
+}
+.recommen-more > a {
+  width: 100%;
+  border: 1px solid #ccc;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+}
+.recommen-title {
+  height: 40px;
+  background-color: #ff9000;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.recommen-title > h5 {
+  height: 20px;
+  line-height: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding-left: 10px;
+}
+.recommen-title > div {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-top: 8px;
+  color: #fff;
+}
+.mmm_footer .footTop {
+  display: flex;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+.mmm_footer .footTop a {
+  flex: 3;
+  border-right: 1px solid #999;
+  line-height: 30px;
+  text-align: center;
+  color: #666;
+}
+.mmm_footer .footTop a:nth-of-type(3) {
+  flex: 4;
+  border: none;
+}
+.mmm_footer .footTop a:nth-of-type(3) span {
+  transform: rotate(180deg);
+  line-height: 30px !important;
+}
+.mmm_footer .footbom {
+  padding: 20px 0;
+  text-align: center;
+}
+.mmm_footer .footbom > p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1em;
+}
+.mmm_footer .footbom > p a {
+  color: #007bff;
+  padding-right: 5px;
+  font-size: 14px;
+}
+.mmm_footer .footbom > a {
+  color: #666;
+  font-size: 13px;
+  line-height: 1em;
 }
