@@ -94,7 +94,7 @@
   flex-wrap: wrap;
   background-color: #fff;
 
-  >a {
+  >div {
     width: 25%;
     display: flex;
     flex-direction: column;
@@ -109,7 +109,12 @@
       display: inline-block;
     }
   }
+
+  >div:nth-last-child(-n+4) {
+    display: none;
+  }
 }
+
 
 .mmm_main {
   .mmm_title {
