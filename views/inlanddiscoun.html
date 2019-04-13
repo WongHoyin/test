@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>国内折扣</title>
+    <link rel="stylesheet" href="../lib/mui/css/mui.css">
+    <link rel="stylesheet" href="../lib/mui/css/muie.css">
+    <link rel="stylesheet" href="../lib/mui/fonts/mui-icons-extra.ttf">
+    <link rel="stylesheet" href="../lib/mui/fonts/mui.ttf">
+    <link rel="stylesheet" href="../styles/inlanddiscoun.css">
+</head>
+
+<body>
+    <div class="layout">
+        <!-- 头部 -->
+        <div class="slowbuy_header">
+            <div class="left">
+                <a href="javascript:;">
+                    <img src="http://static.manmanbuy.com/m/img/mlogo.png" alt="">
+                </a>
+            </div>
+            <form action="" class="search_header">
+                <span class="mui-icon mui-icon-search"></span>
+                <input type="text" class="searchIpt" placeholder="商品比价，查历史价">
+            </form>
+            <div class="right">
+                <a href="https://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia">
+                    下载</a>
+            </div>
+        </div>
+
+        <!-- 主体内容部分 -->
+        <div class="slowbuy_content">
+            <!-- 导航菜单 -->
+            <div class="nav">
+                <ul class="mui-clearfix">
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./coupon.html">精选优惠</a></li>
+                    <li><a href="./category.html">查历史价</a></li>
+                    <li><a href="./category.html">比价搜索</a></li>
+                    <li class="active"><a href="./inlanddiscoun.html">国内折扣</a></li>
+                    <li><a href="./baicaijia.html">白菜价</a></li>
+                    <li><a href="./moneyctrl.html">海淘折扣</a></li>
+                </ul>
+            </div>
+            <!-- 区域滚动容器 -->
+            <div class="mui-scroll-wrapper disContainer">
+                <div class="mui-scroll">
+                    <ul class="discountList">
+                    </ul>
+
+                    <!-- 底部 -->
+                    <div class="mmm_footer">
+                        <div class="footTop">
+                            <a href="javascript:;">登录</a>
+                            <a href="javascript:;">注册</a>
+                            <a href="javascript:;" class="backTop"><span
+                                    class="mui-icon mui-icon-pulldown"></span>返回顶部</a>
+                        </div>
+                        <div class="footbom">
+                            <p><a
+                                    href="https://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia">手机APP下载</a>慢慢买手机版--掌上比价平台
+                            </p>
+                            <a href="../index.html">m.manmanbuy.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script type="text/template" id="discountListTemp">
+        {{each result value index}}        
+        <li>
+            <a href="./discountGoodsDetail.html?productid={{value.productId}}">
+                <div class="img">
+                    {{@value.productImg}}                        
+                </div>
+                <div class="goods_name mui-ellipsis-2">{{value.productName}}</div>
+                <div class="goods_price">{{value.productPrice}}</div>
+                <div class="goods_source">{{value.productFrom}} | {{value.productTime}}</div>
+                </a>
+            </li>
+        {{/each}}
+    </script>
+    <script src="../lib/mui/js/mui.js"></script>
+    <script src="../lib/zepto/zepto.js"></script>
+    <script src="../lib/iscroll/iscroll.js"></script>
+    <script src="../lib/arttemplate/template-web.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/inlanddiscoun.js"></script>
+</body>
+
+</html>

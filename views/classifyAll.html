@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/module.css">
+    <link rel="stylesheet" href="../styles/classifyAll.css">
+    <title>Document</title>
+    <style>
+    </style>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <header id="header" class="mmm_header mui-bar mui-bar-nav">
+            <h1 class="mui-title">全部商品分类</h1>
+            <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+            <a class="mui-icon mui-icon-bars mui-pull-right"></a>
+        </header>
+        <div class="mmm_content">
+            <!-- 搜索框 -->
+            <div class="search">
+                <input type="text" placeholder="请输入搜索内容">
+                <input type="button" value="搜索">
+            </div>
+
+            <!-- 面包屑导航 -->
+            <div class="crumbs">
+                <a href="javascript:;">首页</a><span>></span>
+                <a href="javascript:;">全部分类</a><span>></span>
+            </div>
+            <p class="title">热门品牌排行</p>
+            <!-- 十大品牌 -->
+            <ul class="mui-table-view" id="mainList">
+                <li class="mui-table-view-cell mui-collapse">
+                    <a class="mui-navigate-right" href="#">文字排版</a>
+                    <div class="mui-collapse-content">
+                        <ul class="mui-table-view">
+                            <li class="mui-table-view-cell mui-collapse">
+                                <a class="mui-navigate-right" href="#">
+                                    <span class="iconbgc1">1</span>
+                                    <div>
+                                        <span>三星平板电视</span>
+                                        <span>30天全网销售：999999件</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell mui-collapse">
+                                <a class="mui-navigate-right" href="#">
+                                    <span class="iconbgc2">2</span>
+                                    <div>
+                                        <span>三星平板电视</span>
+                                        <span>30天全网销售：999999件</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell mui-collapse">
+                                <a class="mui-navigate-right" href="#">
+                                    <span class="iconbgc3">3</span>
+                                    <div>
+                                        <span>三星平板电视</span>
+                                        <span>30天全网销售：999999件</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mui-table-view-cell mui-collapse">
+                    <a class="mui-navigate-right" href="#">文字排版</a>
+                </li>
+                <li class="mui-table-view-cell mui-collapse">
+                    <a class="mui-navigate-right" href="#">文字排版</a>
+                </li>
+                <li class="mui-table-view-cell mui-collapse">
+                    <a class="mui-navigate-right" href="#">文字排版</a>
+                </li>
+                <li class="mui-table-view-cell mui-collapse">
+                    <a class="mui-navigate-right" href="#">文字排版</a>
+                </li>
+                <li class="mui-table-view-cell mui-collapse">
+                    <a class="mui-navigate-right" href="#">文字排版</a>
+                </li>
+                <li class="mui-table-view-cell mui-collapse">
+                    <a class="mui-navigate-right" href="#">文字排版</a>
+                </li>
+                <li class="mui-table-view-cell mui-collapse">
+                    <a class="mui-navigate-right" href="#">文字排版</a>
+                </li>
+                <li class="mui-table-view-cell mui-collapse">
+                    <a class="mui-navigate-right" href="#">文字排版</a>
+                </li>
+                <li class="mui-table-view-cell mui-collapse">
+                    <a class="mui-navigate-right" href="#">文字排版</a>
+                </li>
+                <li class="mui-table-view-cell mui-collapse">
+                    <a class="mui-navigate-right" href="#">文字排版</a>
+                </li>
+                <li class="mui-table-view-cell mui-collapse">
+                    <a class="mui-navigate-right" href="#">文字排版</a>
+                </li>
+                <li class="mui-table-view-cell mui-collapse">
+                    <a class="mui-navigate-right" href="#">文字排版</a>
+                </li>
+                <li class="mui-table-view-cell mui-collapse">
+                    <a class="mui-navigate-right" href="#">文字排版</a>
+                </li>
+                <li class="mui-table-view-cell mui-collapse">
+                    <a class="mui-navigate-right" href="#">文字排版</a>
+                </li>
+                <li class="mui-table-view-cell mui-collapse">
+                    <a class="mui-navigate-right" href="#">文字排版</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mmm_footer">
+            <div class="footTop">
+                <a href="javascript:;">登录</a>
+                <a href="javascript:;">注册</a>
+                <a href="javascript:;"><span class="mui-icon mui-icon-pulldown"></span>返回顶部</a>
+            </div>
+            <div class="footbom">
+                <p><a href="https://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia">手机APP下载</a>慢慢买手机版--掌上比价平台</p>
+                <a href="../index.html">m.manmanbuy.com</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/template" id="htmlList">
+        {{each result v i}}
+        <li class="mui-table-view-cell mui-collapse">
+            <a class="mui-navigate-right" href="javascript:;">{{v.brandTitle}}</a>
+            <div class="mui-collapse-content" id="infocon">
+                <ul class="mui-table-view">
+                    <li class="mui-table-view-cell mui-collapse">
+
+                    </li>
+                </ul>
+            </div>
+        </li>
+    {{/each}}
+    </script>
+    <script type="text/template" id="listcon">
+        {{each result v i}}     
+        <a class="mui-navigate-right" href="./classifyAll2.html?brandtitleid={{v.brandTitleId}}">
+            <span class="{{i==0?'iconbgc1':''}}{{i==1?'iconbgc2':''}}{{i==2?'iconbgc3':''}}">1</span>
+            <div>
+                <span>{{v.brandName}}</span>
+                <span>{{v.brandInfo}}</span>
+            </div>
+        </a>
+    {{/each}}
+     
+        
+    </script>
+    <script src="../lib/zepto/zepto.js"></script>
+    <script src="../lib/arttemplate/template-web.js"></script>
+    <script src="../lib/mui/js/mui.min.js"></script>
+    <script src="../lib/iscroll/iscroll.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/classifyAll.js"></script>
+</body>
+
+</html>

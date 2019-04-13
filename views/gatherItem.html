@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/module.css">
+    <link rel="stylesheet" href="../styles/gatherItem.css">
+    <title>凑单品</title>
+</head>
+
+<body>
+    <div class="layout">
+        <header id="header" class="mmm_header mui-bar mui-bar-nav">
+            <h1 class="mui-title">导航栏</h1>
+            <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+            <a class="mui-icon mui-icon-bars mui-pull-right"></a>
+        </header>
+        <div class="mmm_content">
+            <!-- 下拉框 -->
+            <nav>
+                <div class="choose">
+                    <ul>
+                        <li class="dianpu">
+                        </li>
+                        <li class="area">
+                        </li>
+                        <li>
+                            <select name="" id="">
+                                <option value="5">全部价格</option>
+                                <option value="6">贵</option>
+                                <option value="7">很贵</option>
+                                <option value="8">非常贵</option>
+                                <option value="9">死穷逼</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <span class="mui-icon mui-icon-search"></span>
+                </div>
+            </nav>
+            <!-- 产品列表 -->
+            <div class="goodsList">
+                <a class="box">
+                    <img src="../images/gengduo.png" alt="">
+                    <p>21专用餐具666</p>
+                    <span>￥666</span>
+                    <button type="button" class="mui-btn mui-btn-warning">去凑单</button>
+                </a>
+                <a class="box">
+                    <img src="../images/gengduo.png" alt="">
+                    <p>21专用餐具666</p>
+                    <span>￥666</span>
+                    <button type="button" class="mui-btn mui-btn-warning">去凑单</button>
+                </a>
+                <a class="box">
+                    <img src="../images/gengduo.png" alt="">
+                    <p>21专用餐具666</p>
+                    <span>￥666</span>
+                    <button type="button" class="mui-btn mui-btn-warning">去凑单</button>
+                </a>
+                <a class="box">
+                    <img src="../images/gengduo.png" alt="">
+                    <p>21专用餐具666</p>
+                    <span>￥666</span>
+                    <button type="button" class="mui-btn mui-btn-warning">去凑单</button>
+                </a>
+                <a class="box">
+                    <img src="../images/gengduo.png" alt="">
+                    <p>21专用餐具666</p>
+                    <span>￥666</span>
+                    <button type="button" class="mui-btn mui-btn-warning">去凑单</button>
+                </a>
+            </div>
+        </div>
+        <div class="mmm_footer">
+            <div class="footTop">
+                <a href="javascript:;">登录</a>
+                <a href="javascript:;">注册</a>
+                <a href="javascript:;"><span class="mui-icon mui-icon-pulldown"></span>返回顶部</a>
+            </div>
+            <div class="footbom">
+                <p><a href="https://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia">手机APP下载</a>慢慢买手机版--掌上比价平台</p>
+                <a href="../index.html">m.manmanbuy.com</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/template" id="dianpunav">
+        <select name="" id="" class='dianpunav'>
+        {{each result value index}}
+            <option value="{{value.shopId}}">{{value.shopName}}</option>
+        {{/each}}
+        </select>
+    </script>
+    <script type="text/template" id="areanav">
+        <select name="" id="">
+        {{each result value index}}
+            <option value="{{value.areaId}}">{{value.areaName}}</option>
+        {{/each}}
+        </select>
+    </script>
+    <script type="text/template" id="box">
+        {{each result value index}}
+            <div class="box">
+                <img src="{{value.productImg}}" alt=""> 
+                <p class='mui-ellipsis-2'>{{value.productName}}</p>
+                <span>￥{{value.productPrice}}</span>
+                <button type="button" class="mui-btn mui-btn-warning">去凑单</button>
+            </div>
+        {{/each}}
+    </script>
+    <script src="../lib/mui/js/mui.js"></script>
+    <script src="../lib/zepto/zepto.js"></script>
+    <script src="../lib/iscroll/iscroll.js"></script>
+    <script src="../lib/arttemplate/template-web.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/gatherItem.js"></script>
+</body>
+
+</html>

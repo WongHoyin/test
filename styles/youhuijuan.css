@@ -1,0 +1,91 @@
+.header {
+  height: 50px;
+  background-color: skyblue;
+  padding: 10px;
+}
+.header > .logo {
+  margin-left: 50px;
+}
+.header > .logo > img {
+  height: 25px;
+}
+.header > .app {
+  float: right;
+  margin-top: -2px;
+}
+.header > .app > img {
+  height: 34px;
+}
+.search {
+  background-color: #fff;
+  padding: 10px;
+}
+.search > form {
+  position: relative;
+  padding-right: 70px;
+}
+.search > form > input {
+  width: 100%;
+  height: 30px;
+  border: 0;
+  background-color: #eee;
+  border-radius: 10%;
+  padding-left: 15px;
+}
+.search > form > input[type="submit"] {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 63px;
+  height: 30px;
+  border-radius: 10%;
+  background-color: skyblue;
+  color: #fff;
+  border: 0;
+}
+.footer > .container > div {
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.footer > .container > div > a > img {
+  width: 15px;
+  height: 15px;
+}
+.footer > p {
+  text-align: center;
+  font-size: 12px;
+  margin: 5px 0;
+}
+.footer > p:nth-of-type(1) > a:nth-of-type(1) {
+  color: #f00;
+}
+.footer > p:nth-of-type(2) {
+  color: skyblue;
+}
+.head {
+  background: skyblue;
+  color: #eee;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.coupon-title > ul {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.coupon-title > ul > li {
+  list-style: none;
+  float: left;
+  border: 1px solid #666;
+  display: block;
+  margin-left: 15px;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 12px;
+}
+.coupon-title > ul > li > a > img {
+  width: 50px;
+  height: 35px;
+}

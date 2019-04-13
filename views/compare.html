@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="../styles/base.css">
+    <link rel="stylesheet/less" href="../styles/compare.css">
+    <script src="../lib/less/less.js"></script>
+    <title>比价搜索</title>
+</head>
+
+<body>
+    <div class="layout">
+        <!-- 比价搜索顶部部分-->
+        <div class="header">
+            <a href="#" class="logo"><img src="../images/header_logo.png" alt=""></a>
+            <a href="#" class="app"><img src="../images/header_app.png" alt=""></a>
+        </div>
+
+        <!--  比价搜索搜索部分-->
+        <div class="search">
+            <form action="#">
+                <!-- type=search 当点击搜索框的时候输入法右下角 变成搜索 -->
+                <input type="search" name="" id="" placeholder="请输入要比价的商品">
+                <input type="submit" value="搜索">
+            </form>
+        </div>
+
+        <!--  比价搜索主体 -->
+        <div id="category">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <!-- 大分类 -->
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false"
+                                aria-controls="collapseOne" class="collapsed">
+                                大家电
+                            </a>
+                        </h4>
+                    </div>
+                    <!-- 二级分类 -->
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne"
+                        aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-xs-4"><a href="#">电视</a></div>
+                                <div class="col-xs-4"><a href="#">空调</a></div>
+                                <div class="col-xs-4"><a href="#">影院</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  比价搜索底部部分 -->
+        <div class="footer">
+            <div class="container">
+                <div class="col-xs-4">
+                    <a href="#">登录</a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="#">注册</a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+                </div>
+            </div>
+            <p> <a href="#">手机APP下载</a> <a href="#">慢慢买手机版</a> -- 掌上比价平台</p>
+            <p>m.manmanbuy.com </p>
+        </div>
+    </div>
+
+    <!-- 大分类模板 -->
+    <script type="text/html" id="categoryTitleTmp">
+        {{each result as value i}}
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{i}}" aria-expanded="true"
+                        aria-controls="collapseOne" data-titleId="{{value.titleId}}">
+                        {{value.title}}
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse{{i}}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+    <!-- 二级分类模板-->
+    <script type='text/html' id="categoryTmp">
+        <div class="row">
+            {{each result as value i}}
+            <div class="col-xs-4"><a
+                    href="productlist.html?categoryid={{value.categoryId}}&category={{value.category}}">{{value.category}}</a>
+            </div>
+            {{/each}}
+        </div>
+    </script>
+
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../js/template.js"></script>
+    <script src="../js/compare.js"></script>
+</body>
+
+</html>

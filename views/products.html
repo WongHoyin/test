@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="../styles/base.css">
+    <link rel="stylesheet/less" href="../styles/products.css">
+    <script src="../lib/less/less.js"></script>
+    <title>商品分类详情</title>
+</head>
+
+<body>
+    <div class="layout">
+        <!-- 详细产品顶部部分-->
+        <div class="header">
+            <a href="#" class="logo"><img src="../images/header_logo.png" alt=""></a>
+            <a href="#" class="app"><img src="../images/header_app.png" alt=""></a>
+        </div>
+
+        <!-- 详细产品搜索部分-->
+        <div class="search">
+            <form action="#">
+                <!-- type=search 当点击搜索框的时候输入法右下角 变成搜索 -->
+                <input type="search" name="" id="" placeholder="请输入要比价的商品">
+                <input type="submit" value="搜索">
+            </form>
+        </div>
+
+        <!-- 详细产品主体部分-->
+        <div id="productList">
+            <!-- 分类区域 -->
+            <div class="category-title">
+                <ol class="breadcrumb">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">全部分类</a></li>
+                    <li>电视</li>
+                </ol>
+                <a href="#" class="btn btn-default">筛选</a>
+            </div>
+
+            <!-- 详细商品区域 -->
+            <div class="product-list">
+
+            </div>
+
+            <!-- 详细商品操作上一页下一页-->
+            <div class="prodocut-option clearfix">
+                <a href="#" class="btn btn-default page-prev">上一页</a>
+                <a href="#" class="btn btn-default page-next">下一页</a>
+
+                <div class="dropdown">
+                    <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        第一页
+                        <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li>第一页</li>
+                        <li>第二页</li>
+                        <li>第三页</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 详细产品底部部分-->
+        <div class="footer">
+            <div class="container">
+                <div class="col-xs-4">
+                    <a href="#">登录</a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="#">注册</a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+                </div>
+            </div>
+            <p> <a href="#">手机APP下载</a> <a href="#">慢慢买手机版</a> -- 掌上比价平台</p>
+            <p>m.manmanbuy.com </p>
+        </div>
+    </div>
+
+    <!-- 分类模板 -->
+    <script type="text/html" id="categoryTitleTmp">
+        {{each result as value i}}
+        <li><a href="#">首页</a></li>
+        <li><a href="#">全部分类</a></li>
+        <li>{{value.category}}</li>
+        {{/each}}
+    </script>
+
+    <!-- 具体商品模板 -->
+    <script type="text/html" id="productListTmp">
+        {{each result as value i}}
+        <div class="media">
+            <a class="media-left" href="#">
+                {{#value.productImg}}
+            </a>
+            <div class="media-body">
+                <h5><a href="bijia.html?productid={{value.productId}}">{{value.productName}}</a></h5>
+                <p class="price">{{value.productPrice}}</p>
+                <em>{{value.productQuote}}</em><em>{{value.productCom}}</em>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../js/template.js"></script>
+    <script src="../js/products.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ol,
+ul {
+  list-style: none;
+}
+.clearfix::before {
+  content: " ";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+}
+.layout {
+  width: 100vw;
+  height: 100vh;
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.slowbuy_header {
+  background-color: #fff;
+  height: 44px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+}
+.slowbuy_header > .left {
+  width: 85px;
+  height: 24px;
+  margin-right: 20px;
+}
+.slowbuy_header > .left > a {
+  width: 100%;
+  display: block;
+}
+.slowbuy_header > .left > a > img {
+  width: 100%;
+}
+.slowbuy_header > .right {
+  margin-left: 10px;
+}
+.slowbuy_header > .right > a {
+  width: 50px;
+  display: block;
+  padding: 0 5px;
+  color: #ff6c00;
+  border: 1px solid #ff6c00;
+  border-radius: 10px;
+}
+.slowbuy_header > .search_header {
+  flex: 1;
+}
+.slowbuy_header > .search_header > span {
+  position: absolute;
+  font-size: 18px;
+  top: 15px;
+  left: 120px;
+}
+.slowbuy_header > .search_header > .searchIpt {
+  padding-left: 20px;
+  margin: 0;
+  height: 24px;
+  width: 100%;
+  border-radius: 24px;
+  background-color: #eee;
+  font-size: 14px;
+}
+.slowbuy_content {
+  overflow: scroll;
+  flex: 1;
+  position: relative;
+}
+.slowbuy_content .nav {
+  width: 100%;
+  overflow: hidden;
+  font-weight: bold;
+  background-color: #fff;
+}
+.slowbuy_content .nav ul {
+  width: 630px;
+  overflow: hidden;
+}
+.slowbuy_content .nav ul li {
+  float: left;
+  width: 90px;
+  text-align: center;
+  line-height: 30px;
+}
+.slowbuy_content .nav ul li a {
+  width: 100%;
+  display: block;
+  color: #666;
+}
+.slowbuy_content .nav ul li.active a {
+  color: #f85000;
+  border-bottom: 2px solid #f85000;
+}
+.slowbuy_content .disContainer {
+  top: 42px;
+}
+.slowbuy_content .disContainer .discountList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.slowbuy_content .disContainer .discountList > li {
+  width: 50%;
+  border-bottom: 1px solid #eee;
+}
+.slowbuy_content .disContainer .discountList > li > a {
+  width: 100%;
+  display: block;
+  padding: 10px 12px;
+  font-size: 14px;
+  background-color: #fff;
+}
+.slowbuy_content .disContainer .discountList > li > a > .img {
+  padding: 10px 0;
+}
+.slowbuy_content .disContainer .discountList > li > a > .img > img {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+.slowbuy_content .disContainer .discountList > li > a > .goods_name {
+  color: #333;
+  font-weight: bold;
+}
+.slowbuy_content .disContainer .discountList > li > a > .goods_price {
+  margin-top: 5px;
+  color: #ff6c00;
+}
+.slowbuy_content .disContainer .discountList > li > a > .goods_source {
+  margin-top: 10px;
+  color: #aaa;
+}
+.slowbuy_content .disContainer .discountList > li:nth-of-type(odd) {
+  border-right: 1px solid #eee;
+}
+.mmm_footer .footTop {
+  display: flex;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+.mmm_footer .footTop a {
+  flex: 3;
+  border-right: 1px solid #999;
+  line-height: 30px;
+  text-align: center;
+  color: #666;
+}
+.mmm_footer .footTop a:nth-of-type(3) {
+  flex: 4;
+  border: none;
+}
+.mmm_footer .footTop a:nth-of-type(3) span {
+  transform: rotate(180deg);
+  line-height: 30px !important;
+}
+.mmm_footer .footbom {
+  padding: 20px 0;
+  text-align: center;
+}
+.mmm_footer .footbom > p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1em;
+}
+.mmm_footer .footbom > p a {
+  color: #007bff;
+  padding-right: 5px;
+  font-size: 14px;
+}
+.mmm_footer .footbom > a {
+  color: #666;
+  font-size: 13px;
+  line-height: 1em;
+}

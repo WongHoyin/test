@@ -1,0 +1,146 @@
+.header {
+  height: 50px;
+  background-color: skyblue;
+  padding: 10px;
+}
+.header > .logo {
+  margin-left: 50px;
+}
+.header > .logo > img {
+  height: 25px;
+}
+.header > .app {
+  float: right;
+  margin-top: -2px;
+}
+.header > .app > img {
+  height: 34px;
+}
+.search {
+  background-color: #fff;
+  padding: 10px;
+}
+.search > form {
+  position: relative;
+  padding-right: 70px;
+}
+.search > form > input {
+  width: 100%;
+  height: 30px;
+  border: 0;
+  background-color: #eee;
+  border-radius: 10%;
+  padding-left: 15px;
+}
+.search > form > input[type="submit"] {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 63px;
+  height: 30px;
+  border-radius: 10%;
+  background-color: skyblue;
+  color: #fff;
+  border: 0;
+}
+.footer > .container > div {
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.footer > .container > div > a > img {
+  width: 15px;
+  height: 15px;
+}
+.footer > p {
+  text-align: center;
+  font-size: 12px;
+  margin: 5px 0;
+}
+.footer > p:nth-of-type(1) > a:nth-of-type(1) {
+  color: #f00;
+}
+.footer > p:nth-of-type(2) {
+  color: skyblue;
+}
+#productList > .category-title {
+  position: relative;
+}
+#productList > .category-title > .breadcrumb {
+  margin-bottom: 0px;
+}
+#productList > .category-title > .breadcrumb > li::before {
+  content: "";
+}
+#productList > .category-title > .breadcrumb > li::after {
+  content: ">";
+}
+#productList > .category-title > .btn-default {
+  position: absolute;
+  right: 8px;
+  top: 2px;
+  height: 30px;
+}
+#productList > .product-list > .media {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+#productList > .product-list > .media > a img {
+  height: 100px;
+  width: 100px;
+}
+#productList > .product-list > .media > .media-body > .price {
+  color: green;
+}
+#productList > .product-list > .media > .media-body > em {
+  font-size: 12px;
+  color: #eee;
+}
+#productList > .product-list > .media > .media-body > em:last-child {
+  margin-left: 10px;
+}
+#productList > .prodocut-option {
+  position: relative;
+  padding: 10px;
+}
+#productList > .prodocut-option > .page-prev {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 999;
+}
+#productList > .prodocut-option > .page-next {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 999;
+}
+#productList > .prodocut-option > .dropdown {
+  text-align: center;
+}
+#productList > .prodocut-option > .dropdown > a {
+  display: inline-block;
+  width: 100px;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#productList > .prodocut-option > .dropdown > .dropdown-menu {
+  max-width: 99px;
+  min-width: 99px;
+  padding: 0;
+  margin: 0;
+  left: 66%;
+  margin-left: -50px;
+}
+#productList > .prodocut-option > .dropdown > .dropdown-menu > li {
+  max-width: 99px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #eee;
+}

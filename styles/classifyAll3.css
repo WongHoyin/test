@@ -1,0 +1,52 @@
+.comments .commentsImg {
+  background-color: #fff;
+  padding: 10px 5px;
+  display: flex;
+}
+.comments .commentsImg > div {
+  flex: 2.5;
+}
+.comments .commentsImg > div img {
+  width: 90%;
+}
+.comments .commentsImg > span {
+  flex: 5;
+  color: #999;
+  margin-top: 30px;
+}
+.comments .commentsText {
+  width: 96%;
+  margin-left: 2%;
+  padding: 1%;
+  background-color: #fff;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.comments .commentsText::after {
+  content: "";
+  border-bottom: 20px solid #fff;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  position: absolute;
+  top: -20px;
+  left: 42px;
+}
+.comments .commentsText p {
+  line-height: 22px;
+}
+.comments .commentsText p i {
+  color: orange;
+  font-size: 22px;
+}
+.comments .commentsText p span {
+  font-size: 14px;
+  line-height: 22px !important;
+}
+.comments .commentsText p span:nth-of-type(2) {
+  float: right;
+  margin-top: 2px;
+}
+.comments .commentsText span {
+  font-size: 14px;
+}

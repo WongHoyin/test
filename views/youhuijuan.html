@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="../styles/base.css">
+    <link rel="stylesheet/less" href="../styles/youhuijuan.less">
+    <script src="../js/less.js"></script>
+    <title>优惠券</title>
+</head>
+
+<body>
+    <div class="layout">
+        <!-- 优惠券头部 -->
+        <div id="ctl00_headerApp" class="head">
+            <div class="back">
+                <a href="#" class="icon-back"></a>
+            </div>
+            <h1>
+                优惠券
+            </h1>
+            <div class="home">
+                <a href="http://m.manmanbuy.com/?o=download" onclick="trackEvent('header部下载');" class="icon-app"></a>
+            </div>
+        </div>
+
+        <!-- 优惠券主体 -->
+        <div class="coupon-title">
+        </div>
+
+        <!-- 优惠券底部-->
+        <div class="footer">
+            <div class="container">
+                <div class="col-xs-4">
+                    <a href="#">登录</a>
+                </div>
+
+                <div class="col-xs-4">
+                    <a href="#">注册</a>
+                </div>
+
+                <div class="col-xs-4">
+                    <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+                </div>
+            </div>
+            <p> <a href="#">手机APP下载</a> <a href="#">慢慢买手机版</a> -- 掌上比价平台</p>
+            <p>m.manmanbuy.com </p>
+        </div>
+    </div>
+
+
+    <!-- 优惠券主体模板渲染 -->
+    <script id="couponTitle" type="text/html">
+        <ul class="clearfix">
+            {{each result as value i}}
+            <li style="width: 118.333px;">
+                <a href="{{value.couponLink}}?couponid={{value.couponId}}"><img src="{{value.couponImg}}" alt="">
+                    <br>{{value.couponTitle}}</a>
+            </li>
+            {{/each}}
+        </ul>
+    </script>
+    <script src="../js/template.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        (function ($) {
+            $.getUrlParam = function (name) {
+                var reg = new RegExp("(^|&)" +
+                    name + "=([^&]*)(&|$)");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) return unescape(r[2]);
+                return null;
+            }
+        })(jQuery);
+    </script>
+    <script src="../js/youhuijuan.js"></script>
+</body>
+
+</html>

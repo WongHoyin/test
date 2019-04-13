@@ -17,7 +17,53 @@ $(function () {
         $(".pyg_nav > div:nth-child(8)").on("click", function () {
           $(".pyg_nav > div:nth-last-child(-n+4)").toggle(200);
           console.log(123);
+          // $('.pyg_nav > a:nth-child(1)')
         });
+        $('.golist:nth-of-type(1)').on('tap', function () {
+          window.location.href = "./views/compare.html"
+
+        })
+        $('.golist:nth-of-type(2)').on('tap', function () {
+          window.location.href = "./views/moneyctrl.html"
+
+        })
+        $('.golist:nth-of-type(3)').on('tap', function () {
+          window.location.href = "./views/inlanddiscoun.html"
+
+        })
+        $('.golist:nth-of-type(4)').on('tap', function () {
+          window.location.href = "./views/inexpensive.html "
+
+        })
+        $('.golist:nth-of-type(5)').on('tap', function () {
+          window.location.href = "./views/shoppingDiscounts.html"
+
+        })
+        $('.golist:nth-of-type(6)').on('tap', function () {
+          window.location.href = "./views/youhuijuan.html"
+
+        })
+        $('.golist:nth-of-type(7)').on('tap', function () {
+          window.location.href = "./views/moneyctrl.html"
+
+        })
+        $('.golist:nth-of-type(9)').on('tap', function () {
+          window.location.href = "./views/gatherItem.html"
+
+        })
+        $('.golist:nth-of-type(10)').on('tap', function () {
+          window.location.href = "./views/moneyctrl.html"
+
+        })
+        $('.golist:nth-of-type(11)').on('tap', function () {
+          window.location.href = "./views/sitenav.html"
+
+        })
+        $('.golist:nth-of-type(12)').on('tap', function () {
+          window.location.href = "./views/procucts.html"
+
+        })
+
       }
     });
   }

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/module.css">
+    <link rel="stylesheet" href="../styles/classifyAll.css">
+    <link rel="stylesheet" href="../styles/classifyAll2.css">
+    <title>Document</title>
+    <style>
+    </style>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <header id="header" class="mmm_header mui-bar mui-bar-nav">
+            <h1 class="mui-title">全部商品分类</h1>
+            <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+            <a class="mui-icon mui-icon-bars mui-pull-right"></a>
+        </header>
+        <div class="mmm_content">
+            <!-- 搜索框 -->
+            <div class="search">
+                <input type="text" placeholder="请输入搜索内容">
+                <input type="button" value="搜索">
+            </div>
+            <!-- 导航菜单 -->
+            <div class="nav">
+                <ul>
+                    <li><a href="javascript:;">占位置</a></li>
+                    <li><a href="javascript:;">占位置</a></li>
+                    <li><a href="javascript:;">占位置</a></li>
+                    <li><a href="javascript:;">占位置</a></li>
+                    <li><a href="javascript:;">占位置</a></li>
+                    <li><a href="javascript:;">占位置</a></li>
+                    <li><a href="javascript:;">占位置</a></li>
+                    <li><a href="javascript:;">占位置</a></li>
+                    <li><a href="javascript:;">占位置</a></li>
+                    <li><a href="javascript:;">占位置</a></li>
+                </ul>
+            </div>
+            <!-- 面包屑导航 -->
+            <div class="crumbs">
+                <a href="javascript:;">首页</a><span>></span>
+                <a href="javascript:;">全部分类</a><span>></span>
+            </div>
+            <p class="title">平板电视产品销量排行牌排行</p>
+            <!-- 产品列表 -->
+            <div class="goodsList">
+                <ul>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="listImg">
+                                <img src="../images/gengduo.png" alt="">
+                            </div>
+                            <div class="listInfo">
+                                <div class="mui-ellipsis-2">商品信息商品信息商品信息商品信息商品信商品信息商品信息商品信息商品信息商品信息商品息商品信息商品信息商品信息商品信息
+                                </div>
+                                <span>￥9999</span><i>★★★★★</i>
+                                <p><span>报价(7)</span><i>评论(9999)</i></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="listImg">
+                                <img src="../images/gengduo.png" alt="">
+                            </div>
+                            <div class="listInfo">
+                                <div class="mui-ellipsis-2">商品信息商品信息商品信息商品信息商品信商品信息商品信息商品信息商品信息商品信息商品息商品信息商品信息商品信息商品信息
+                                </div>
+                                <span>￥9999</span><i>★★★★★</i>
+                                <p><span>报价(7)</span><i>评论(9999)</i></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="listImg">
+                                <img src="../images/gengduo.png" alt="">
+                            </div>
+                            <div class="listInfo">
+                                <div class="mui-ellipsis-2">商品信息商品信息商品信息商品信息商品信商品信息商品信息商品信息商品信息商品信息商品息商品信息商品信息商品信息商品信息
+                                </div>
+                                <span>￥9999</span><i>★★★★★</i>
+                                <p><span>报价(7)</span><i>评论(9999)</i></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="listImg">
+                                <img src="../images/gengduo.png" alt="">
+                            </div>
+                            <div class="listInfo">
+                                <div class="mui-ellipsis-2">商品信息商品信息商品信息商品信息商品信商品信息商品信息商品信息商品信息商品信息商品息商品信息商品信息商品信息商品信息
+                                </div>
+                                <span>￥9999</span><i>★★★★★</i>
+                                <p><span>报价(7)</span><i>评论(9999)</i></p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mmm_footer">
+            <div class="footTop">
+                <a href="javascript:;">登录</a>
+                <a href="javascript:;">注册</a>
+                <a href="javascript:;"><span class="mui-icon mui-icon-pulldown"></span>返回顶部</a>
+            </div>
+            <div class="footbom">
+                <p><a href="https://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia">手机APP下载</a>慢慢买手机版--掌上比价平台</p>
+                <a href="../index.html">m.manmanbuy.com</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/template" id="htmlList">
+        {{each result v i}}
+        <li>
+            <a href="classifyAll3.html?productid={{v.productId}}" class="goodscomm">
+                <div class="listImg">
+                    {{@v.productImg}}
+                </div>
+                <div class="listInfo">
+                    <div class="mui-ellipsis-2">{{v.productName}}</div>
+                    <span>{{v.productPrice}}</span><i>★★★★★</i>
+                    <p><span>{{v.productQuote}}</span><i>{{v.productCom}}</i></p>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <script src="../lib/zepto/zepto.js"></script>
+    <script src="../lib/mui/js/mui.min.js"></script>
+    <script src="../lib/arttemplate/template-web.js"></script>
+    <script src="../lib/iscroll/iscroll.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/classifyAll2.js"></script>
+</body>
+
+</html>
